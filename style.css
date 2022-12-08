@@ -1,0 +1,178 @@
+body
+{
+    color: white;
+    font-family: Bebas;
+    font-size: 24px;
+    background-image: linear-gradient(to top, #537895 0%, #09203f 100%);
+}
+
+p
+{
+    color: black;
+    font-family: Consolas;
+    font-size: 24px;
+}
+
+input
+{
+    font-family: Consolas;
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 77px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+span
+{
+    color: #E94B3CFF;
+    font-family: Bebas;
+}
+
+.td_subtopic
+{
+    background-color: #00b0f0;
+    font-size: xx-large;
+    text-decoration: underline;
+    width: 450px;
+    height: 77px;
+    padding-left: 2%;
+}
+
+.td_first_row
+{
+    background-color: #ddebf7;
+    color: black;
+    width: 300px;
+    height: 77px;
+    padding-left: 4%;
+}
+
+.td_second_row
+{
+    background-color: #ddebf7;
+    color: black;
+    width: 80px;
+    text-align: center;
+}
+
+.td_third_row
+{
+    background-color: #ddebf7;
+    color: black;
+    text-align: center;
+    width: 150px;
+}
+
+.td_fourth_row
+{
+    background-color: #ddebf7;
+    color: black;
+    text-align: center;
+    width: 150px;
+}
+
+.td_fifth_row
+{
+    background-color: #ddebf7;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+}
+
+.grand_total
+{
+    background-color: #F9F871;
+}
+
+#monthly_repayment_unit_output
+{
+    font-family: Bebas;
+    color: #2F4858;
+    font-size: 24px;
+}
+
+#monthly_repayment_output
+{
+    color: #2F4858;
+    font-size: xx-large;
+}
+
+.footer_copyright
+{
+    color: white;
+}
+
+/* Neon Text Effect */
+#table-title
+{
+    color: white;
+    font-size: 40px;
+    padding-left: 0;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    line-height: 0;
+    font-family: 'Pacifico';
+    animation: neon 60s infinite;
+}
+
+@keyframes neon
+{
+    0%, 39%, 41%, 59%, 61%, 100%
+    {
+        text-shadow:
+        white 0 0 12px,
+        #ff3aad 0 0 24px,
+        #ff3aad 0 0 36px;
+    }
+
+    40%, 60%
+    {
+        text-shadow: none;
+    }
+}                                       /* Neon Text Effect - Finished */
+
+/* Neon Button Effect */
+.neon_button
+{
+    position: relative;
+    display: inline-block;
+    color: #F9F871;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 3.5%;
+    margin-bottom: 2.5%;
+    padding: 15px 30px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.neon_button:hover
+{
+    color: #2F3300;
+    font-weight: bolder;
+    background: #F9F871;
+    box-shadow: 0 0 10px #F9F871,
+                0 0 40px #F9F871,
+                0 0 80px #F9F871;
+    transition-delay: 0.15s;
+}
+
+.neon_button span
+{
+    position: absolute;
+    display: block;
+}                                       /* Neon Button Effect - Finished */

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Car Purchase Eligibility Calculator</title>
+        <link rel="icon" href="images/cts.ico">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+
+        <!-- Pacifo Font -->
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+        <!-- Bebas Font -->
+        <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+        <!-- Ubuntu Font -->
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    </head>
+    
+    <body>
+        <center><h1 id="table-title">Car Loan Calculator</h1></center>
+
+        <center>
+            <table>
+                <tr>
+                    <td colspan="5" class="td_subtopic">Monthly Repayment:</td>
+                </tr>
+                <tr>                            
+                    <td class="td_first_row">Car Price</td>
+                    <td class="td_second_row">MYR</td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row">
+                        <input type="number" id="car_price" value="95000"><br><span id="car_price_error"></span>
+                    </td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>                            
+                    <td class="td_first_row">Interest Rate</td>
+                    <td class="td_second_row">%</td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row">
+                        <input type="number" id="interest_rate" value="3.2"><br><span id="interest_rate_error"></span>
+                    </td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>                            
+                    <td class="td_first_row">Loan Period</td>
+                    <td class="td_second_row">Year</td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row">
+                        <input type="number" id="loan_period" value="9"><br><span id="loan_period_error"></span>
+    
+                    </td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>                            
+                    <td class="td_first_row">Down Payment</td>
+                    <td class="td_second_row">%</td>
+                    <td class="td_third_row">
+                        <input type="number" id="down_payment_pct" value="10"><br><span id="down_payment_pct_error"></span>
+                    </td>
+                    <td class="td_fourth_row"></td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>                            
+                    <td class="td_first_row"></td>
+                    <td class="td_second_row">MYR</td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row">
+                        <p id="down_payment_output"></p>
+                    </td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>                            
+                    <td class="td_first_row">Applied Loan Amount (Principal)</td>
+                    <td class="td_second_row">%</td>
+                    <td class="td_third_row">
+                        <p id="applied_loan_amount_pct_output"></p>
+                    </td>
+                    <td class="td_fourth_row"></td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>                            
+                    <td class="td_first_row"></td>
+                    <td class="td_second_row">MYR</td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row">
+                        <p id="applied_loan_amount_output"></p>
+                    </td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>                            
+                    <td class="td_first_row">Total Interest Paid</td>
+                    <td class="td_second_row">MYR</td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row"></td>
+                    <td class="td_fifth_row">
+                        <p id="total_interest_paid_output"></p>
+                    </td>
+                </tr>
+                <tr>                            
+                    <td class="td_first_row">Total Loan Amount</td>
+                    <td class="td_second_row">MYR</td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row"></td>
+                    <td class="td_fifth_row">
+                        <p id="total_loan_amount_output"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_first_row grand_total"></td>
+                    <td class="td_second_row grand_total">
+                        <p id="monthly_repayment_unit_output"></p>
+                    </td>
+                    <td class="td_third_row grand_total"></td>
+                    <td class="td_fourth_row grand_total"></td>
+                    <td class="td_fifth_row grand_total">
+                        <p id="monthly_repayment_output"></p>
+                    </td>
+                </tr>
+
+    
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+            </table>
+
+
+        <center>
+            <a id="btn-calc" class="neon_button" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Calculate
+            </a>
+        </center>                     
+    </body>
+
+    <footer>
+        <center>
+            <p class="footer_copyright">
+                2022 Copyright © Yottasoft Technology
+            </p>
+        </center>
+
+        <center>
+            <p class="footer_copyright">
+                All rights reserved.
+            </p>
+        </center>
+    </footer>
+</html>
